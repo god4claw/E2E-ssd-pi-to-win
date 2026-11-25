@@ -89,10 +89,10 @@ sudo rm /etc/ssh/sshd_config.d/00-hardening.conf && sudo systemctl reload ssh
 ```bash
 sudo apt install -y fail2ban
 sudo systemd-analyze security fail2ban.service --no-pager | head -3   # необязательно
-sudo fail2ban-client status sshd
+sudo fail2ban-client status sshd                                      # тюрьма sshd активна
 ```
 
-Учтите: по умолчанию `fail2ban` читает `/etc/ssh/sshd_config`, а не `sshd_config.d/`, — для правил `Match` это неважно, но для порта и журнала может понадобиться локальный `jail.local`.
+Настройки держите в `jail.local`, а не в `jail.conf`: последний перезаписывается при обновлении пакета.
 
 ## Чек-лист периметра
 
