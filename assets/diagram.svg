@@ -63,7 +63,7 @@
   <text class="mono" x="56" y="474">OpenSSH, порт 22, ключ ed25519</text>
 
   <line class="edge" x1="32" y1="524" x2="488" y2="524"/>
-  <text class="note" x="32" y="548">ниже линии — только шифротекст: Pi его не прочитает</text>
+  <text class="note" x="32" y="548">ниже линии — только шифротекст</text>
   <line class="cable" x1="430" y1="528" x2="430" y2="560" marker-end="url(#arrow)"/>
   <text class="lbl" x="446" y="548">гигабит</text>
 
